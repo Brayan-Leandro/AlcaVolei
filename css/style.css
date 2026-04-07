@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+header {
+    background-color: #1E40AF;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+header button {
+    background-color: #F3F4F6;
+    color: #1E40AF;
+    border: none;
+}
+
+header div button {
+    width: 205px;
+    height: 34px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 10px;
+    color: #1E40AF;
+    font-size: 30px;
+}
+
+.secaoCartaz {
+    background-image: url("../img/IMGfundo.png");
+    background-repeat: no-repeat;
+    height: 422px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.secaoCartaz div {
+    width: 70%;
+    padding-left: 160px;
+}
+
+.secaoCartaz div h2 {
+    font-size: 59.43px;
+}
+
+.secaoCartaz div p {
+    margin-top: 10px;
+    font-size: 33.74px;
+}
+
+.secaoCartaz div button {
+    width: 285px;
+    height: 54px;
+    border-radius: 17px;
+    margin-right: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: #FFD700;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cardsRapidos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cads {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    background-color: #D1D5DB;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fotoContainer {
+    background-color: #FFFFFF;
+    padding: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.cads img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.cads p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #1E40AF;
+    font-size: 23px;
+}
