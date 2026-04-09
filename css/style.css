@@ -123,3 +123,103 @@ ul li {
     color: #1E40AF;
     font-size: 23px;
 }
+
+.sobre {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    font-size: 20px;
+    color: #2c4a8a;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.info {
+    padding: 60px 30px;
+    text-align: center;      
+}
+
+.info h2 {
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.info input {
+    padding: 15px 20px 15px;
+    border: none;
+    border: solid 0.5px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.info button {
+    padding: 15px 20px 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    border: solid 0.1px;
+    background-color: yellow;
+}
+
+.maisVendidos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.maisVendidos img {
+    width: 100px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #1E40AF, #3B82F6);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+
+.informacao {
+    display: flex;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.face {
+    width: 60px;
+    border-radius: 50px;
+    
+}
+
+.din {
+    width: 60px;
+    border-radius: 50px;
+}
+
+.gmail {
+    width: 60px;
+    border-radius: 50px;
+    margin-right: 30px;
+}
+
+.alca {
+    font-size: 25px;
+    padding-left: 30px;
+}
