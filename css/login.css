@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: inter;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #1E40AF;
+    background: linear-gradient(to right, #000000, #0f172a, #1E40AF);
+}
+
+header img {
+    width: 100px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+main {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dados input {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2;
+}
+
+.dados button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #000000;
+    background-color: #1E40AF;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+label input {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #f4f4f4;
+    color:#000000;
+    padding: 20px;
+}
+
+.paginas{
+    display: flex;
+    gap: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links img {
+    width: 35px;
+    height: 35px;
+}
