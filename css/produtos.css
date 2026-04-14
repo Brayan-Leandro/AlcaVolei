@@ -87,11 +87,13 @@ main {
     flex-direction: row;
 }
 
+/* filtros: acessorios/bolas */
+
 .filtros {
     display: flex;
     flex-direction: column;
     width: 390px;
-    height: 810px;
+    height: 630px;
     margin: 0 10px;
     background-color: #FFF;
     border-radius: 20px;
@@ -102,6 +104,59 @@ main {
     font-weight: 300;
     padding: 10px;
     color: #1E40AF;
+}
+
+.filtros button {
+    width: 331px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #1E3A8A;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.filtros button:hover {
+    background-color: #FFE122;
+    color: #000;
+}
+
+/* filtros: roupas */
+
+.filtros_roupas {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 810px;
+    margin: 0 10px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.filtros_roupas h2 {
+    font-size: 50px;
+    font-weight: 300;
+    padding: 10px;
+    color: #1E40AF;
+}
+
+.filtros_roupas button {
+    width: 331px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #1E3A8A;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.filtros_roupas button:hover {
+    background-color: #FFE122;
+    color: #000;
 }
 
 hr {
@@ -129,28 +184,121 @@ label {
     cursor: pointer;
 }
 
-.filtros button {
-    width: 331px;
-    height: 47px;
-    border-radius: 10px;
-    background-color: #1E3A8A;
-    color: #fff;
-    font-size: 20px;
-    margin: 0 10px;
-    border: none;
+/* caixa de cores dos filtors da aba roupas */
+
+.seleciona_cor {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    transition: 0.3 ease;
+}
+
+.cor-item:hover {
+    border: 1px solid #1E3A8A;
+}
+
+.seleciona_cor input[type="radio"] {
+    display: none;
+}
+
+.cor-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
     cursor: pointer;
 }
 
-.filtros button:hover {
+.white {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.black {
+    background-color: #000;
+}
+
+.green {
+    background-color: #11D92F;
+}
+
+.yellow {
     background-color: #FFE122;
-    color: #000;
 }
 
 .content_aling {
     width: 80%;
 }
 
-.cartaz {
+/* cartaz roupas */
+
+.cartaz_roupas {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/img_fundo_jogadora.png);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: #fff;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.promocao {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-bottom: 90px;
+}
+
+.promocao_semana {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.roupa_promocao {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.roupa_promocao span {
+    color: #FFD700;
+}
+
+.preco_promocao {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.promocao button {
+    width: 180px;
+    height: 49px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1E40AF;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.promocao button:hover {
+    color: #fff;
+    background-color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* cartaz acessorios */
+
+.cartaz_acessorios {
     display: flex;
     flex-direction: column;
     background-image: url(../img/img_acessorios.png);
@@ -164,25 +312,25 @@ label {
     border-radius: 20px;
 }
 
-.acessorios_cartaz {
+.produto_cartaz {
     display: flex;
     flex-direction: column;
     padding-left: 40px;
     padding-bottom: 90px;
 }
 
-.acessorios_semana {
+.produto_semana {
     font-size: 40px;
     padding-top: 20px;
 }
 
-.preco_acessorios {
+.preco_produto {
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 50px;
 }
 
-.acessorios_cartaz button {
+.produto_cartaz button {
     width: 180px;
     height: 49px;
     border-radius: 20px;
@@ -195,13 +343,71 @@ label {
     transition: 0.3 ease;
 }
 
-.acessorios_cartaz button:hover {
+.produto_cartaz button:hover {
     color: #fff;
     background-color: #FFD700;
     transform: scale(1.1);
 }
 
-/* bolas mais vendidas */
+/* cartaz bolas */
+
+.cartaz_bolas {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/img_fundo_ofertas.png);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: #fff;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 33px;
+}
+
+.oferta_semana {
+    font-size: 40px;
+}
+
+.bola_ofertas {
+    font-size: 26px;
+}
+
+.preco_ofertas {
+    font-size: 30px;
+}
+
+.preco_ofertas span {
+    color: #FFE122;
+}
+
+.ofertas button {
+    width: 180px;
+    height: 49px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFE122;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.ofertas button:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+
+/*mais vendidas */
 
 .mais_Vendidos {
     margin-top: 30px;
@@ -212,14 +418,14 @@ label {
     font-size: 44.8px;
 }
 
-.divisao_acessorios {
+.divisao_produtos {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     width: 98%;
 }
 
-.caixa_acessorios {
+.caixa_produtos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,6 +441,8 @@ label {
 
 .imagemContainer {
     width: 100%;
+    height: 60%;
+    overflow: hidden;
     background-color: #fff;
 }
 
@@ -245,24 +453,25 @@ label {
 
 .imagemContainer:hover {
     transform: scale(1.1);
+    border-radius: 30px;
 }
 
 
-.info_acessorios {
+.info_produtos {
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.info_acessorios p {
+.info_produtos p {
     padding-top: 7px;
 }
 
-.caixa_acessorios span {
+.caixa_produtos span {
     color: #11D92F;
 }
 
-.caixa_acessorios button {
+.caixa_produtos button {
     width: 170px;
     height: 39px;
     border-radius: 20px;
@@ -273,13 +482,19 @@ label {
     cursor: pointer;
 }
 
+.caixa_produtos button:hover {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: 700;
+}
+
 /* todas as bola */
 
-.todas_acessorios {
+.todos_produtos {
     margin: 20px 0;
 }
 
-.todas_acessorios h2 {
+.todos_produtos h2 {
     color: #1E3A8A;
     font-size: 44.8px;
 }
