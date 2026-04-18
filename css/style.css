@@ -8,7 +8,7 @@
 }
 
 header {
-    background-color: #1E40AF;
+    background: linear-gradient(to right, #000000, #0f172a, #1E40AF);
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -17,8 +17,8 @@ header {
     align-items: center;
 }
 
-header h1 {
-    margin-left: 20px;
+header img {
+    width: 100px;
 }
 
 header input {

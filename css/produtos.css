@@ -10,7 +10,7 @@
 /* header */
 
 header {
-    background-color: #1E40AF;
+    background: linear-gradient(to right, #000000, #0f172a, #1E40AF);
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -19,8 +19,8 @@ header {
     align-items: center;
 }
 
-header h1 {
-    margin-left: 20px;
+header img {
+    width: 100px;
 }
 
 header input {
@@ -414,7 +414,7 @@ label {
 }
 
 .mais_Vendidos h2 {
-    color: #1E3A8A;
+    color: #238409;
     font-size: 44.8px;
 }
 
@@ -483,8 +483,7 @@ label {
 }
 
 .caixa_produtos button:hover {
-    background-color: #FFD700;
-    color: #000;
+    background-color: #238409;
     font-weight: 700;
 }
 
@@ -495,7 +494,7 @@ label {
 }
 
 .todos_produtos h2 {
-    color: #1E3A8A;
+    color: #238409;
     font-size: 44.8px;
 }
 
